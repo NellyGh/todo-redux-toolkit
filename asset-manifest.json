@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/todo-redux-toolkit/static/css/main.5acb0694.css",
+    "main.js": "/todo-redux-toolkit/static/js/main.cf8f4b11.js",
+    "static/media/trash.png": "/todo-redux-toolkit/static/media/trash.413e12343a8d64335853.png",
+    "index.html": "/todo-redux-toolkit/index.html",
+    "main.5acb0694.css.map": "/todo-redux-toolkit/static/css/main.5acb0694.css.map",
+    "main.cf8f4b11.js.map": "/todo-redux-toolkit/static/js/main.cf8f4b11.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5acb0694.css",
+    "static/js/main.cf8f4b11.js"
+  ]
+}
