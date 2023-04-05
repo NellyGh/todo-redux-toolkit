@@ -1,0 +1,46 @@
+.todo {
+    width: 400px;
+    margin: 18px auto;
+}
+
+.todo  h2{
+    background-color: #242E33;
+    border-radius:30px;
+    padding:7px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    color:#938C8E;
+    font-weight: 200;
+    
+}
+
+.row {
+    display:flex;
+    align-items:center;
+    gap:23px;
+}
+.todo img {
+    object-fit: contain;
+    width:30px;
+    height:30px;
+    cursor: pointer;
+    border-radius:50px;
+    box-shadow:  0 0 5px 5px  #788388;
+    
+}
+
+.todo button {
+    /* margin-left:20px; */
+    border-radius:50%;
+    width:30px;
+    height:30px;
+    background-color: #949FA4;
+    border:1px solid transparent;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow:  0 0 5px 5px  #788388;
+    cursor:pointer
+
+}

@@ -1,38 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Roboto+Slab:wght@500&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+	background: linear-gradient(137deg, #0F3242, #2B404A, #424B50, #505254);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
 .App {
-  text-align: center;
+  max-width:100%
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.date {
+   color:rgb(246, 94, 0);
+   text-align:center;
+   padding:20px
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.message h1 {
+    color:#FFE2DE;
+    letter-spacing: 4px;
+    animation: 2s anim-lineUp ease-out infinite;
+    text-align: center;
+    font-size: 50px;
+ }
+ 
+ .message {
+   margin: 50px auto
+ }
+
+ ::-webkit-scrollbar {
+    width: 10px;
+    
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius:10px
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius:10px;
+    
   }
-}
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+ 
+ 
+ @keyframes anim-lineUp {
+   0% {
+     opacity: 0;
+     transform: translateY(80%);
+     color:blueviolet
+   }
+   20% {
+     opacity: 0;
+   }
+   50% {
+     opacity: 1;
+     transform: translateY(0%);
+     color:chartreuse
+   }
+   100% {
+     opacity: 1;
+     transform: translateY(0%);
+     color:chocolate
+   }
+ }
+ 
+ 
+ @keyframes gradient {
+     0% {
+         background-position: 0% 50%;
+     }
+     50% {
+         background-position: 100% 50%;
+     }
+     100% {
+         background-position: 0% 50%;
+     }
+ }
+ 
+ 
+ 
+ 

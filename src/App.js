@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import './App.css';
+import Form from './components/Form/Form';
+import Todo from './components/Todo/Todo';
+
 
 function App() {
+  const [date,setDate] =useState( new Date());
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='message'>
+          <h1>Just do it!</h1>
+       </div>
+       <p className='date'>{date.toLocaleDateString()}</p>
+        <Form/>
+        <Todo />
     </div>
   );
 }
